@@ -39,3 +39,8 @@ cd /workspace/potato-survivors
 npm i && npm run build && npm run smoke
 npm run preview   # 或 dev
 ```
+
+### 部署进展（同日稍后）
+- Runlog 落盘：`docs/RUNLOG.md`
+- GitHub 仓库已建并推送：https://github.com/YeJe-cpu/potato-survivors （public, main）
+- Cloudflare 插件已安装，等待主公在连接卡上授权；授权后部署 Pages 并回填绝对 `twitter:player` URL。
