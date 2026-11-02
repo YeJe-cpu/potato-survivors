@@ -52,3 +52,7 @@ npm run preview   # 或 dev
 - 已部署 Worker `potato-survivors`（静态资源内嵌 + CSP `frame-ancestors`），目标 URL：`https://potato-survivors.leafsanren.workers.dev/`。本机解析到 198.18.0.1 导致 TLS/WebFetch 异常，**待外网验收**。
 - GitHub Pages 已发布：`https://yeje-cpu.github.io/potato-survivors/`（HTTP 200，资源齐全）。GH Pages 无自定义 CSP header → 帖内 iframe【待验证/可能失败】。
 - 下一步：主公提供带 Pages Edit 的 API Token，或外网确认 Worker URL 后以此为 Player Card 主链。
+
+### 浏览器实机可玩（同日）
+- 【实证】GH Pages 与 Worker 两条链均 PLAYABLE：菜单 → Start → HUD（LV/计时/Gold/DASH），Worker 上计时从 0:00→0:09 且有怪出现。
+- 早先桌面 Chrome 对 Worker 的 SSL mismatch = 本机 198.18 劫持假阴性；Playwright 路径可正常打开。
