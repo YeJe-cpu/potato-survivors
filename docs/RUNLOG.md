@@ -44,3 +44,11 @@ npm run preview   # 或 dev
 - Runlog 落盘：`docs/RUNLOG.md`
 - GitHub 仓库已建并推送：https://github.com/YeJe-cpu/potato-survivors （public, main）
 - Cloudflare 插件已安装，等待主公在连接卡上授权；授权后部署 Pages 并回填绝对 `twitter:player` URL。
+
+
+### 部署落地（同日）
+- Cloudflare MCP：无 Pages Write；Workers Scripts Write 可用。
+- 已创建 workers.dev 账号子域：`leafsanren`。
+- 已部署 Worker `potato-survivors`（静态资源内嵌 + CSP `frame-ancestors`），目标 URL：`https://potato-survivors.leafsanren.workers.dev/`。本机解析到 198.18.0.1 导致 TLS/WebFetch 异常，**待外网验收**。
+- GitHub Pages 已发布：`https://yeje-cpu.github.io/potato-survivors/`（HTTP 200，资源齐全）。GH Pages 无自定义 CSP header → 帖内 iframe【待验证/可能失败】。
+- 下一步：主公提供带 Pages Edit 的 API Token，或外网确认 Worker URL 后以此为 Player Card 主链。

@@ -1,3 +1,8 @@
+## 当前线上
+- 可玩（外链）：https://yeje-cpu.github.io/potato-survivors/
+- Worker（CSP）：https://potato-survivors.leafsanren.workers.dev/ （待外网复核）
+- 仓库：https://github.com/YeJe-cpu/potato-survivors
+
 # 发布就绪检查清单（Potato Survivors）
 
 ## A. 发帖前（技术）
