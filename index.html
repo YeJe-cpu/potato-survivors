@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Potato Survivors</title>
+    <meta name="description" content="Free browser survivors-like. Play as Spud with potato-skin auto-fire. Survive the crawlers." />
+
+    <!-- X Player Card meta (draft). On deploy, twitter:player must be absolute HTTPS. -->
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:site" content="@leaf_sanren" />
+    <meta name="twitter:title" content="Potato Survivors" />
+    <meta name="twitter:description" content="Survivors-like in the browser. WASD + dash, auto potato-skin fire. Survive!" />
+    <meta name="twitter:image" content="/og.png" />
+    <!-- After deploy replace player URL with https://YOUR_HOST/ (same origin as share page) -->
+    <meta name="twitter:player" content="/" />
+    <meta name="twitter:player:width" content="480" />
+    <meta name="twitter:player:height" content="480" />
+    <!-- CSP for embed is in public/_headers (frame-ancestors). Do not set X-Frame-Options. -->
+
+    <meta property="og:title" content="Potato Survivors" />
+    <meta property="og:description" content="Free browser survivors-like. Survive the crawler wave." />
+    <meta property="og:image" content="/og.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game" width="480" height="480" aria-label="Potato Survivors game"></canvas>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
