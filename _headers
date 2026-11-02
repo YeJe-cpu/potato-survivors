@@ -1,0 +1,6 @@
+/*
+  # X Player Card / iframe embed draft
+  # Allow embedding on X/Twitter; do NOT set X-Frame-Options
+  Content-Security-Policy: frame-ancestors 'self' https://x.com https://twitter.com https://*.x.com https://*.twitter.com https://mobile.twitter.com;
+  # Optional hardening (tune on deploy):
+  # Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'self' https://x.com https://twitter.com https://*.x.com https://*.twitter.com https://mobile.twitter.com;
